@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEnu con Efectos de botones</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .menu ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;   
+        }
+        .menu li{
+            margin: 0 15px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            transition:transform 0.3s ease,background-color 0.3s
+             ease;
+            display: :inline-block;
+        }
+        .menu a:hover{
+            background-color: #3498db;
+            transform: scale(1.1);
+        }
+        .menu li ul{
+            display: none;
+        }
+        .menu li:hover>ul{
+            display: block;
+        }
+        .menu li ul{
+            position: absolute;
+            min-width: 140px
+        }
+        .menu li a{
+            
+            display: block;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="proyecto 3.html">Incios</a></li>
+            <li><a href="#Acerca de">Acerca de</a></li>
+            <li><a href="#Sericios">Servicios</a></li>
+            <li><a href="#Portafolios">portafolio</a>
+             <ul>
+                <li><a href="Subemnu1.html">Ropa Deportiva</a></li>
+                <li><a href="submenu2.html">Ropa de invierno</a></li>
+             </ul>
+            </li>
+            <li><a href="#Contactanos">Contactanos</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
